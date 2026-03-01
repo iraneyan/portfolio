@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top left, #0f0c29, #000000);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(90deg, #4facfe, #b465da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cv-btn {
+  padding: 8px 18px;
+  background: linear-gradient(135deg, #4facfe, #b465da);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #b465da;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+  min-height: 90vh;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.hero-text span {
+  background: linear-gradient(90deg, #4facfe, #b465da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text h2 {
+  margin: 15px 0;
+  color: #aaa;
+}
+
+.main-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #4facfe, #b465da);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px #4facfe;
+}
+
+/* Image Glow */
+.hero-img img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px #4facfe, 0 0 80px #b465da;
+  transition: 0.4s;
+}
+
+.hero-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.skills, .projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.skill-card, .project-card {
+  width: 250px;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.skill-card:hover,
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #4facfe;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
